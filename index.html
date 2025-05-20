@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QueenAlexandria</title>
+    <style>
+        /* Full-page layout with no margin */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif; /* Set a nice font */
+        }
+
+        /* Gradient rainbow background with transgender pride colors */
+        body {
+            background: linear-gradient(to bottom, 
+                #55CDFC,   /* Light blue */
+                #F7A8B8,   /* Light pink */
+                #fff,      /* White */
+                #F7A8B8,   /* Light pink */
+                #55CDFC);  /* Light blue */
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; /* Center everything vertically */
+        }
+
+        /* Title styling */
+        h1 {
+            color: white;
+            font-size: 3rem;
+            font-weight: bold;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adding a subtle shadow for better visibility */
+            margin-bottom: 30px; /* Space between title and buttons */
+        }
+
+        /* Styling for the rainbow button */
+        .rainbow-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 8px;
+            background: linear-gradient(45deg, #FF007F, #FF7F00, #FFFF00, #00FF00, #0000FF, #8A2BE2);
+            background-size: 400%;
+            animation: rainbow 4s ease infinite; /* Rainbow animation */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.2s;
+            text-decoration: none; /* Remove default link underline */
+        }
+
+        /* Hover effect for button */
+        .rainbow-btn:hover {
+            transform: scale(1.1); /* Slight zoom effect */
+        }
+
+        /* Keyframes for rainbow animation */
+        @keyframes rainbow {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        /* Styling for the button container */
+        .button-container {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        /* Footer Styling */
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <h1>Welcome to QueenAlexandria</h1>
+
+    <!-- Button Container Section -->
+    <div class="button-container">
+        <!-- Link for Socials button -->
+        <a href="socials.html">
+            <button class="rainbow-btn">Socials</button>
+        </a>
+
+        <!-- Link for Software button -->
+        <a href="software.html">
+            <button class="rainbow-btn">Software</button>
+        </a>
+
+        <!-- Link for About Me button -->
+        <a href="aboutme.html">
+            <button class="rainbow-btn">About Me</button>
+        </a>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 QueenAlexandria. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
